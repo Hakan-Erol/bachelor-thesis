@@ -1,0 +1,23 @@
+question 49:
+ I Consent
+
+question 50:
+From 1 to 5, how do you evaluate your level of programming before taking the Programming 2 course?
+
+question 51:
+ From 1 to 5, how do you evaluate your current level of programming after taking the Programming 2 course?
+
+question 52:
+Which of the following learning strategies did you use during the Programming 2 course?
+A: Revisiting the lecture slides
+B: Doing project practice extra exercises (at the end of each assignment)
+C: Reading the recommended literature
+D: Doing project lovelace exercises
+E: Attending to/watching the lectures
+F: Attending the practice sessions (on Wednesdays)
+
+question 53:
+From 1 to 5, how often did you attend the lectures (or watch the lecture recording before the workgroups)?
+
+question 54:
+From 1 to 5, how often did you attend the practice sessions?
