@@ -1,23 +1,10 @@
-question 49:
- I Consent
-
-question 50:
-From 1 to 5, how do you evaluate your level of programming before taking the Programming 2 course?
-
-question 51:
- From 1 to 5, how do you evaluate your current level of programming after taking the Programming 2 course?
-
-question 52:
-Which of the following learning strategies did you use during the Programming 2 course?
-A: Revisiting the lecture slides
-B: Doing project practice extra exercises (at the end of each assignment)
-C: Reading the recommended literature
-D: Doing project lovelace exercises
-E: Attending to/watching the lectures
-F: Attending the practice sessions (on Wednesdays)
-
-question 53:
-From 1 to 5, how often did you attend the lectures (or watch the lecture recording before the workgroups)?
-
-question 54:
-From 1 to 5, how often did you attend the practice sessions?
+Question	Options:	A 	B	C	D	E	F	G	H	I	J
+39	I consent to my answers being used anonymously as part of this research. 										
+40	Which program are you following?	AI Bachelor	HNW Bachelor	Psychology	Pre-master student	Other (specify in the last question)					
+41	From 1 to 5, how do you evaluate your previous level of programming (before the start of the course)?(1 - beginner; 5 - advanced)	1	2	3	4	5					
+42	From 1 to 5, how do you evaluate your current level of programming (after the course)?(1 - beginner; 5 - advanced)	1	2	3	4	5					
+43	Which of the following learning strategies did you use in general to study for the course?	Watching the lectures (mostly in person)	Watching the lectures (mostly from home)	Revisiting the lecture slides	Doing extra exercises at the end of each assignment	Reading the recommended books	Doing project lovelace exercises	Attending the practice sessions (on Wednesdays)	Writing summaries of the lecture	Practicing together with peers	Using the feedback given and the self-reflection
+44	Considering only the practice sessions of this course (on Wednesdays), how often have you been physically present at them? 	Almost always (90–100% of meetings)	Most of the times (about 70–90%)	Occasionally (about 40–70%)	Rare (about 10–40%)	Almost never (less than 10%)					
+45	Considering only the lectures of this course (on Tuesdays), how often have you been physically present at them? 	Almost always (90–100% of meetings)	Most of the times (about 70–90%)	Occasionally (about 40–70%)	Rare (about 10–40%)	Almost never (less than 10%)					
+46	On average, how many hours per week did you spend on Programming 1, including contact hours and self-study?(For reference: Lecture = 2h; Practice session = 2h; Workgroup = 4h)										
+47	On average, how many hours per week did you spend on all your other courses combined, including contact hours and self-study?										
