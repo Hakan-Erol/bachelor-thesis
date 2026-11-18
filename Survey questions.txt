@@ -1,10 +1,45 @@
 Question	Options:	A 	B	C	D	E	F	G	H	I	J
-39	I consent to my answers being used anonymously as part of this research. 										
-40	Which program are you following?	AI Bachelor	HNW Bachelor	Psychology	Pre-master student	Other (specify in the last question)					
-41	From 1 to 5, how do you evaluate your previous level of programming (before the start of the course)?(1 - beginner; 5 - advanced)	1	2	3	4	5					
-42	From 1 to 5, how do you evaluate your current level of programming (after the course)?(1 - beginner; 5 - advanced)	1	2	3	4	5					
-43	Which of the following learning strategies did you use in general to study for the course?	Watching the lectures (mostly in person)	Watching the lectures (mostly from home)	Revisiting the lecture slides	Doing extra exercises at the end of each assignment	Reading the recommended books	Doing project lovelace exercises	Attending the practice sessions (on Wednesdays)	Writing summaries of the lecture	Practicing together with peers	Using the feedback given and the self-reflection
-44	Considering only the practice sessions of this course (on Wednesdays), how often have you been physically present at them? 	Almost always (90–100% of meetings)	Most of the times (about 70–90%)	Occasionally (about 40–70%)	Rare (about 10–40%)	Almost never (less than 10%)					
-45	Considering only the lectures of this course (on Tuesdays), how often have you been physically present at them? 	Almost always (90–100% of meetings)	Most of the times (about 70–90%)	Occasionally (about 40–70%)	Rare (about 10–40%)	Almost never (less than 10%)					
+39	I consent to my answers being used anonymously as part of this research. 
+A: I consent
+										
+40	Which program are you following?	
+A: AI Bachelor	
+B: HNW Bachelor	
+C: Psychology	
+D: Pre-master student	
+
+Other (specify in the last question)					
+41	From 1 to 5, how do you evaluate your previous level of programming (before the start of the course)?(1 - beginner; 5 - advanced)	
+A:1	B:2	C:3	D:4	E:5	
+				
+42	From 1 to 5, how do you evaluate your current level of programming (after the course)?(1 - beginner; 5 - advanced)	
+A:1	B:2	C:3	D:4	E:5
+					
+43	Which of the following learning strategies did you use in general to study for the course?	
+A: Watching the lectures (mostly in person)	
+B: Watching the lectures (mostly from home)	
+C: Revisiting the lecture slides	
+D: Doing extra exercises at the end of each assignment	
+E: Reading the recommended books	
+F: Doing project lovelace exercises	
+G: Attending the practice sessions (on Wednesdays)	
+H: Writing summaries of the lecture	
+I: Practicing together with peers	
+J: Using the feedback given and the self-reflection
+
+44	Considering only the practice sessions of this course (on Wednesdays), how often have you been physically present at them? 	
+A: Almost always (90–100% of meetings)	
+B: Most of the times (about 70–90%)	
+C: Occasionally (about 40–70%)	
+D: Rare (about 10–40%)	
+E: Almost never (less than 10%)	
+				
+45	Considering only the lectures of this course (on Tuesdays), how often have you been physically present at them? 	
+A:Almost always (90–100% of meetings)	
+B:Most of the times (about 70–90%)	
+C: Occasionally (about 40–70%)	
+D: Rare (about 10–40%)	
+
+Almost never (less than 10%)					
 46	On average, how many hours per week did you spend on Programming 1, including contact hours and self-study?(For reference: Lecture = 2h; Practice session = 2h; Workgroup = 4h)										
 47	On average, how many hours per week did you spend on all your other courses combined, including contact hours and self-study?										
