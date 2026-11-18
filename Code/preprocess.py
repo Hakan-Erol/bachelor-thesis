@@ -39,33 +39,34 @@ def translate(df):
 
     df: Translate the columns in the right manner for one hot encoding + normalization
     """
-    # Question 53 and 54 will be translated to numerical values
-    df["53"] = df["53"].replace(["A","B","C","D","E",],[1,2,3,4,5])
-    df["54"] = df["54"].replace(["A","B","C","D","E",],[1,2,3,4,5])
-    # Question 52 needs to be represented as 6 distinct columns to indicate if strategy was present (0=no 1=yes)
-    # print("\nDifferent occurences question 52:",len(df["52"].unique()))
+    # Question 44 and 45 will be translated to numerical values
+    df["44"] = df["44"].replace(["A","B","C","D","E"],[1,2,3,4,5])
+    df["45"] = df["45"].replace(["A","B","C","D","E"],[1,2,3,4,5])
+    # Question 43 needs to be represented as 10 distinct columns to indicate if strategy was present (0=no 1=yes)
+    
 
-    answers_52 = ["A","B","C","D","E","F"]
+    answers_43 = ["A","B","C","D","E","F","G","H","I","J"]
 
-    for answer in answers_52:
+    
+    for answer in answers_43:
         
-        # Ones if the choice (A - F) is present in the answer
-        ones = [1  if answer in x else 0 for x in df["52"]]
-        df[f"52.{answer}"] = ones
+        # Ones if the choice (A - J) is present in the answer
+        ones = [1  if isinstance(x,str) and answer in x else 0 for x in df["43"]] # Some people did not fill this one in -> NaN value 
+        df[f"43.{answer}"] = ones
 
     # print("Before",df.head())
 
     # Drop old column
-    df = df.drop('52', axis=1)
+    df = df.drop('43', axis=1)
     # Re order columns
     cols = df.columns.tolist()
-    cols = cols[3:] + cols[1:3] # first columns 52.answer,53,54
+    cols = cols[3:] + cols[1:3] # first columns 43.answer
     df = df[cols]
     df_unnorm = df.copy()
-    # column 53 and 54 need normalization (values between 0 and 1 instead of 1 till 5).
+    # column 44 and 45 need normalization (values between 0 and 1 instead of 1 till 5).
     def normalize_0_1(col):
         return (col-1)/4
-    df['53'] = normalize_0_1(df['53'])
-    df['54'] = normalize_0_1(df['54'])
+    df['44'] = normalize_0_1(df['44'])
+    df['45'] = normalize_0_1(df['45'])
     # print("\nafter\n",df.head())
     return df
