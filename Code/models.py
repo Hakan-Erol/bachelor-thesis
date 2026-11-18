@@ -20,6 +20,7 @@ def MCA(X_train,X_test):
     mca : MCA model
     X_train_cor: Train set (row coordinates)
     X_test_cor: test set (row coordinates)
+    (X_train,X_test): both sets without row coordinates
     """
 
     # MCA model
@@ -43,7 +44,7 @@ def MCA(X_train,X_test):
 
     
 
-    return mca,X_train_cor,X_test_cor
+    return mca,X_train_cor,X_test_cor,(X_train,X_test)
 
 def GMM(X_train,X_test):
     """
@@ -53,7 +54,7 @@ def GMM(X_train,X_test):
 
     output:
 
-    models : Gaussian mixture model
+    models : Gaussian mixture models
     
     """
     # Creating the GMM 
