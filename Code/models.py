@@ -22,29 +22,39 @@ def MCA(X_train,X_test):
     X_test_cor: test set (row coordinates)
     (X_train,X_test): both sets without row coordinates
     """
+    answers_43 = ["A","B","C","D","E","F","G","H","I","J"]
+    cols_mca = [f"43.{i}" for i in answers_43] + ['44','45']
+    """
+    We will fit the MCA on question 43 (Learning strategies) and on
+    practice and lecture attendance
+    """
 
+    X_train_mca =  X_train[cols_mca]
+    X_test_mca =  X_test[cols_mca]
+    # For this package
     # MCA model
     mca = prince.MCA(
-    n_components=7,
+    n_components=12,
     engine='sklearn',
     random_state=42,
-    one_hot=False, # one hot encoding is done
+    correction="greenacre",
+    one_hot=True, 
     check_input=True,
     copy=True)
 
     # Fitting model on trainset
-    mca = mca.fit(X_train)
+    mca = mca.fit(X_train_mca)
 
     # Taking row coordinates
-    X_train_cor = mca.row_coordinates(X_train)
-    X_test_cor = mca.row_coordinates(X_test)
+    X_train_cor = mca.row_coordinates(X_train_mca)
+    X_test_cor = mca.row_coordinates(X_test_mca)
 
     # Eigenvalue Summary
     print(mca.eigenvalues_summary)
 
     
 
-    return mca,X_train_cor,X_test_cor,(X_train,X_test)
+    return mca,X_train_cor,X_test_cor,(X_train,X_test),cols_mca
 
 def GMM(X_train,X_test):
     """

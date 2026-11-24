@@ -22,7 +22,7 @@ def remove_no_consent(df,col,remove_nan):
     df = df[col=='A']
 
     if remove_nan:
-        df = df.dropna()
+        df = df.dropna(subset=['43','44','45'])
 
     print("Shape:",df.shape)
     print("Number of people who gave consent:",df.shape[0])
@@ -60,8 +60,11 @@ def translate(df):
     df = df.drop('43', axis=1)
     # Re order columns
     cols = df.columns.tolist()
-    cols = cols[3:] + cols[1:3] # first columns 43.answer
+    
+    cols = cols[7:] + [cols[0]] + cols[2:7]  # first columns 43.answer + exclude consent column
+
     df = df[cols]
+
     df_unnorm = df.copy()
     # column 44 and 45 need normalization (values between 0 and 1 instead of 1 till 5).
     def normalize_0_1(col):
@@ -69,4 +72,4 @@ def translate(df):
     df['44'] = normalize_0_1(df['44'])
     df['45'] = normalize_0_1(df['45'])
     # print("\nafter\n",df.head())
-    return df
+    return df,df_unnorm

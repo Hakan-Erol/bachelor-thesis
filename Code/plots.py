@@ -15,15 +15,16 @@ def corr_cluster(df):
     # fig, ax =plt.subplots(1,2)
 
     # Correlation
-    corr = df.corr()
-    sns.heatmap(corr,annot=True, cmap="coolwarm", fmt=".2f", linewidths=0.5)
-    plt.title("Correlation matrix")
+    corr = df.corr(numeric_only=True)
+    fig,ax = plt.subplots(figsize=(12,10))
+    sns.heatmap(corr,annot=True, cmap="coolwarm", fmt=".2f", linewidths=0.5,ax=ax)
+    ax.set_title("Correlation matrix")
     plt.show()
 
     # Cluster map 
-    sns.clustermap(df)
-    plt.title("Cluster map")
-    plt.show()
+    # sns.clustermap(df)
+    # plt.title("Cluster map")
+    # plt.show()
     return None
 
 def plot_gmm(chosen_component,X_train,X_test,models):
