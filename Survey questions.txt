@@ -39,7 +39,7 @@ A:Almost always (90–100% of meetings)
 B:Most of the times (about 70–90%)	
 C: Occasionally (about 40–70%)	
 D: Rare (about 10–40%)	
-
-Almost never (less than 10%)					
+E: Almost never (less than 10%)		
+			
 46	On average, how many hours per week did you spend on Programming 1, including contact hours and self-study?(For reference: Lecture = 2h; Practice session = 2h; Workgroup = 4h)										
 47	On average, how many hours per week did you spend on all your other courses combined, including contact hours and self-study?										
