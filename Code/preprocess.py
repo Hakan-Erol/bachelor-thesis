@@ -22,7 +22,7 @@ def remove_no_consent(df,col,remove_nan):
     df = df[col=='A']
 
     if remove_nan:
-        df = df.dropna(subset=['43','44','45'])
+        df = df.dropna(subset=['43','44','45','46'])
 
     print("Shape:",df.shape)
     print("Number of people who gave consent:",df.shape[0])

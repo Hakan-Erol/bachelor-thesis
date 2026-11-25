@@ -58,3 +58,16 @@ def plot_gmm(chosen_component,X_train,X_test,models):
         fig.legend()
         fig.show()
         return None
+
+
+def plot_mca(mca,X,color):
+     """
+     input:
+     mca : MCA model
+     X : data model was fitted on
+     color: color
+     """
+     
+
+
+     return fig,ax
