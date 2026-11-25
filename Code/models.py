@@ -37,7 +37,7 @@ def MCA(X_train,X_test):
     n_components=12,
     engine='sklearn',
     random_state=42,
-    correction="greenacre",
+    correction="greenacre", # (Abdi and Valentin, 2007).
     one_hot=True, 
     check_input=True,
     copy=True)
